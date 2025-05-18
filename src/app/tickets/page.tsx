@@ -21,7 +21,7 @@ const TicketsPage = () => {
                 {initialTickets.map((ticket) => (
                     <div
                         key={ticket.id}
-                        className="w-full max-w-[420px] p-4 border border-slate-100 rounded"
+                        className="w-full max-w-[420px] p-4 border border-slate-100 rounded animate-fade-from-top"
                     >
                         <div>{TICKET_ICONS[ticket.status]}</div>
                         <h3 className="text-lg truncate font-semibold">{ticket.title}</h3>
